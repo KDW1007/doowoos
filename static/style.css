@@ -1,0 +1,60 @@
+@import "reset.css";
+
+/*components*/
+@import "user-profile.css";
+@import "login.css";
+@import "playlist.css";
+@import "book.css";
+
+/*container*/
+@import "header.css";
+@import "nav.css";
+@import "home.css";
+@import "article.css";
+@import "search.css";
+@import "footer.css";
+@import "mylibrary__playlist.css";
+@import "mylibrary__people.css";
+@import "mylibrary__book.css";
+@import "bookmark.css";
+@import "first__frame.css";
+
+
+/*examples*/
+@import "ashlee_vance_book.css";
+@import "ashlee_vance_book_ch1.css";
+
+/*small desktop
+@media screen and (max-width: 1190px) {
+  .aside__row__text {
+    display: none;
+  }
+  .aside {
+    align-items: center;
+  }
+}
+/*tablets
+@media screen and (max-width: 1000px) {
+  .article {
+    display: none;
+  }
+}*/
+
+header,
+nav,
+main,
+article{
+  background-color: black;
+  color: #909090;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+body {
+  background-color: black;
+}

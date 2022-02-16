@@ -1,0 +1,27 @@
+.user-profile {
+    display: flex;
+    height: 40px;
+    width: 170px;
+    border-radius: 19px;
+    align-self: flex-end;
+    justify-content: space-between;
+    padding: 0px 4px 0px;
+    background-color: #d6a931;
+}
+.user-profile__image {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    align-self: center;
+}
+.user-profile__name {
+    align-self: center;
+    font-size: 17px;
+    font-weight: 800;
+    color: #000000;
+}
+.user-profile__btn {
+    align-self: center;
+    font-size: 21px;
+    color: #000000;
+}

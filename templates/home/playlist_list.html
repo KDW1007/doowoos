@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if playlist_list %}
+    <ul>
+    {% for playlist in playlist_list %}
+        <li><a href="/home/{{ playlist.id }}/">
+            <img src="{{ playlist.cover.url }}" width="300">
+            <div>{{ playlist.title }}</div>
+        </a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>There is no playlist!</p>
+{% endif %}
+{% endblock %}

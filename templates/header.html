@@ -1,0 +1,18 @@
+<header class="header">
+    <h1 class="site-info">
+        <div class="site-title">Kogito Books</div>
+    </h1>
+    <div class="page-info"><div>Home</div></div>
+    <div class="user-info">
+        {% if user.is_authenticated %}
+        <a href="#" class="user-profile">
+            <img class="user-profile__image" src="#">
+            <span class="user-profile__name">{{ user.username }}</span>
+            <a href="{% url 'common:logout' %}" class="user-profile">로그아웃</a>
+        </a>
+        {% else %}
+        <a href="{% url 'common:login' %}" class="user-profile">로그인</a>
+        <a href="" class="user-profile">회원가입</a>
+        {% endif %}
+    </div>
+</header>

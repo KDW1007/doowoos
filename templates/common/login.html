@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+  <h2>로그인하기</h2>
+  <form method="post" action="{% url 'common:login' %}">
+    {% csrf_token %}
+    {% include "form_errors.html" %}
+    <div>
+      <label for="username">E-mail(이메일)</label>
+      <input type="text" name="username" id="username"
+             value="{{ form.username.value|default_if_none:'' }}">
+    </div>
+    <div>
+      <label>Password(비밀번호)</label>
+      <input type="text" name="password" id="password"
+             value="{{ form.password.value|default_if_none:'' }}">
+    </div>
+    <button type="submit">로그인</button>
+  </form>
+  <div>
+    <span><a href="{% url 'common:signup' %}">계정을 만드세요.</a></span>
+  </div>
+</div>
+{% endblock %}
